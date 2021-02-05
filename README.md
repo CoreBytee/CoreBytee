@@ -2,4 +2,9 @@
 some info about me lol
 
 
-https://github-readme-stats.vercel.app/api?username=CoreBytee&show_icons=true&include_all_commits=true
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=CoreBytee&repo=github-readme-stats" />
+</a>
+<a href="https://github.com/anuraghazra/convoychat">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=CoreBytee&repo=convoychat" />
+</a>
