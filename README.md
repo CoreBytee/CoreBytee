@@ -1,5 +1,5 @@
-# me
-some info about me lol
+# CoreByte
+Hey there :)
 
 
 <a>
