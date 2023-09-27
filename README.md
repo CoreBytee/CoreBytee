@@ -2,7 +2,7 @@
 Hey there :)
 
 Epic gamer from the Netherlands!<br>
-Likes to game and code in lua bit of js and html.<br>
+Is creating applications and websites in javascript, html, css and lua.<br>
 He/Him.<br>
 
 http://corebyte.ga/<br>
