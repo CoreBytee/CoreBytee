@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.fullwidth {
+    width: 100vw;
+}
+
+.partwidth {
+    width: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+@topbarheight: 60px;
+
+.topbar {
+    height: @topbarheight;
+    display: flex;
+    justify-content: center;
+    gap: @topbarheight;
+    align-items: center;
+
+    a {
+        font-size: 1.5vw;
+        text-decoration: none;
+        color: var(--color-text);
+        padding: 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        letter-spacing: normal;
+        transition: letter-spacing 0.2s ease-in-out;
+
+        &::after {
+            content: "";
+            background-color: var(--color-text-special);
+            width: 0%;
+            height: 3px;
+            border-radius: 10px;
+
+            transition: width 0.2s ease-in-out;
+            
+        }
+
+        &:hover {
+            letter-spacing: 3px;
+            &::after {
+                width: 75%;
+            }
+        }
+        
+    }
+}
+
+.titlecontainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    height: calc(100vh - @topbarheight);
+
+    .name {
+        font-size: 10vw;
+        line-height: 20vw;
+        color: var(--color-text-special);
+    }
+
+    a {
+        color: var(--color-text-unspecial);
+        font-weight: bold;
+        font-size: 2vw;
+        transform: translateY(-@topbarheight);
+    }
+
+    .downbutton {
+        position: absolute;
+        bottom: 1vh;
+        align-self: center;
+        height: 10vw;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        svg {
+            height: 5vw;
+            width: 10vw;
+            object-fit: cover;
+            fill: var(--color-text-unspecial);
+
+            transition: 
+                fill 0.2s ease-in-out,
+                transform 0.2s ease-in-out,
+                width 0.2s ease-in-out,;
+
+            transform: translateY(0);
+        }
+
+        &:hover {
+            svg {
+                fill: var(--color-text-special);
+                // transform: translateY(-1vw);
+                width: 12vh;
+            }
+        }
+    }
+}
+
+.aboutcontainer {
+
+}
