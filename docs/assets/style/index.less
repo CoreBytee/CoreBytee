@@ -1,0 +1,73 @@
+@import "./Colors.css";
+
+html, body {
+    width: 100vw;
+    margin: 0;
+
+    scroll-behavior: smooth;
+
+    background-color: var(--color-background);
+    font-family: "Ubuntu Mono", monospace;
+    color: var(--color-text);
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    display: inline;
+    margin: 0;
+}
+
+.block {
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.block-green {
+    background-color: rgba(172, 255, 47, 0.134);
+    border: rgb(113, 172, 23) 2px solid;
+}
+
+.block-yellow {
+    background-color: rgba(243, 232, 15, 0.134);
+    border: rgb(214, 238, 31) 2px solid;
+}
+
+.block-segmented {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        .block-title {
+            text-align: center;
+        }
+    }
+
+    .block-title {
+        width: 30%;
+        height: auto;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .block-list {
+        display: grid;
+        gap: 10px;
+        width: 70%;
+        @media screen and (max-width: 800px) {
+            grid-template-columns: 1fr;
+        }
+
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
