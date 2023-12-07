@@ -97,6 +97,9 @@ body {
 .aboutcontainer .block {
   margin-bottom: 10px;
 }
+.aboutcontainer p {
+  margin: 0;
+}
 .projectcontainer .block {
   margin-bottom: 10px;
 }
