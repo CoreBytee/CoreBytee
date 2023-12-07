@@ -1,7 +1,7 @@
 @import "Colors.css";
 html,
 body {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   scroll-behavior: smooth;
   background-color: var(--color-background);
@@ -36,6 +36,14 @@ h6 {
   background-color: rgba(243, 232, 15, 0.134);
   border: #d6ee1f 2px solid;
 }
+.block-red {
+  background-color: rgba(255, 47, 47, 0.134);
+  border: #ac1717 2px solid;
+}
+.block-brand {
+  background-color: #3498db32;
+  border: #3498db 2px solid;
+}
 .block-segmented {
   display: flex;
   flex-direction: row;
@@ -49,6 +57,10 @@ h6 {
   }
   .block-segmented .block-title {
     text-align: center;
+    width: auto !important;
+  }
+  .block-segmented .block-list {
+    text-align: center;
   }
 }
 .block-segmented .block-title {
@@ -56,6 +68,11 @@ h6 {
   height: auto;
   font-size: 20px;
   font-weight: bold;
+}
+@media screen and (max-width: 800px) {
+  .block-segmented .block-title img {
+    display: none;
+  }
 }
 .block-segmented .block-list {
   display: grid;
@@ -67,4 +84,53 @@ h6 {
   .block-segmented .block-list {
     grid-template-columns: 1fr;
   }
+}
+.block-segmented .block-text {
+  width: 70%;
+}
+.block-project .block-header {
+  position: relative;
+  height: 60px;
+}
+.block-project .block-header .date {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--color-text-unspecial);
+}
+.block-project .block-header .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-text);
+}
+.block-project .block-header .type {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  color: var(--color-text-unspecial);
+}
+.block-project .block-data {
+  position: relative;
+}
+.block-project .block-data:hover img {
+  filter: blur(10px);
+}
+.block-project .block-data:hover .data-body {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+.block-project .block-data img {
+  width: 100%;
+  transition: filter 0.2s ease-in-out;
+}
+.block-project .block-data .data-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  height: 100%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0;
+  transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }

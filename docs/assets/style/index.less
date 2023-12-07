@@ -2,7 +2,7 @@
 
 html,
 body {
-    width: 100vw;
+    width: 100%;
     margin: 0;
 
     scroll-behavior: smooth;
@@ -45,6 +45,16 @@ h6 {
     border: rgb(214, 238, 31) 2px solid;
 }
 
+.block-red {
+    background-color: rgba(255, 47, 47, 0.134);
+    border: rgb(172, 23, 23) 2px solid;
+}
+
+.block-brand {
+    background-color: #3498db32;
+    border: #3498db 2px solid;
+}
+
 .block-segmented {
     display: flex;
     flex-direction: row;
@@ -57,6 +67,11 @@ h6 {
 
         .block-title {
             text-align: center;
+            width: auto !important;
+        }
+
+        .block-list {
+            text-align: center;
         }
     }
 
@@ -65,6 +80,12 @@ h6 {
         height: auto;
         font-size: 20px;
         font-weight: bold;
+
+        @media screen and (max-width: 800px) {
+            img {
+                display: none;
+            }
+        }
     }
 
     .block-list {
@@ -74,8 +95,75 @@ h6 {
 
         @media screen and (max-width: 800px) {
             grid-template-columns: 1fr;
+
         }
 
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .block-text {
+        width: 70%;
+    }
+}
+
+.block-project {
+    .block-header {
+        position: relative;
+        height: 60px;
+
+        .date {
+            font-size: 16px;
+            font-weight: bold;
+            color: var(--color-text-unspecial);
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--color-text);
+        }
+
+        .type {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 20px;
+            color: var(--color-text-unspecial);
+        }
+    }
+
+
+    .block-data {
+        position: relative;
+
+        &:hover {
+            img {
+                filter: blur(10px);
+            }
+
+            .data-body {
+                background-color: rgba(0, 0, 0, 0.5);
+                opacity: 1;
+            }
+        }
+
+        img {
+            width: 100%;
+            transition: filter 0.2s ease-in-out;
+        }
+
+        .data-body {
+            position: absolute;
+            top: 0;
+            left: 0;
+    
+            padding: 20px;
+            height: 100%;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0);
+            opacity: 0;
+
+            transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+        }
+    }    
 }
