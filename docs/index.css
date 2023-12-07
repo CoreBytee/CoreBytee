@@ -9,32 +9,28 @@ body {
   width: 100vw;
 }
 .partwidth {
-  width: 100%;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  width: 80%;
 }
 .topbar {
-  height: 60px;
+  height: auto;
   display: flex;
-  justify-content: center;
-  gap: 60px;
-  align-items: center;
-  position: fixed;
-  top: 0px;
-  background-color: var(--color-background);
-  z-index: 9999;
+  justify-content: space-around;
 }
 .topbar a {
-  font-size: 3vw;
+  padding: 10px;
+  font-size: 4vw;
   text-decoration: none;
   color: var(--color-text);
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   letter-spacing: normal;
   transition: letter-spacing 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 800px) {
+  .topbar a {
+    font-size: 20px;
+  }
 }
 .topbar a::after {
   content: "";

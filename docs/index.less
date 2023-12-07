@@ -11,37 +11,29 @@ body {
 }
 
 .partwidth {
-    width: 100%;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    width: 80%;
 }
 
-@topbarheight: 60px;
-
 .topbar {
-    height: @topbarheight;
+    height: auto;
     display: flex;
-    justify-content: center;
-    gap: @topbarheight;
-    align-items: center;
-    position: fixed;
-    top: 0px;
-    background-color: var(--color-background);
-    z-index: 9999;
+    justify-content: space-around;
 
     a {
-        font-size: 3vw;
+        @media screen and (min-width: 800px) {
+            font-size: 20px;
+        }
+
+        padding: 10px;
+        font-size: 4vw;
         text-decoration: none;
         color: var(--color-text);
-        padding: 10px;
+        letter-spacing: normal;
+        transition: letter-spacing 0.2s ease-in-out;
 
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-
-        letter-spacing: normal;
-        transition: letter-spacing 0.2s ease-in-out;
 
         &::after {
             content: "";
@@ -49,18 +41,16 @@ body {
             width: 0%;
             height: 3px;
             border-radius: 10px;
-
             transition: width 0.2s ease-in-out;
-            
         }
 
         &:hover {
             letter-spacing: 3px;
+
             &::after {
                 width: 75%;
             }
         }
-        
     }
 }
 
@@ -70,7 +60,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    height: calc(100vh - @topbarheight);
+    height: calc(100vh);
 
     .name {
         font-size: 10vw;
@@ -102,10 +92,10 @@ body {
             object-fit: cover;
             fill: var(--color-text-unspecial);
 
-            transition: 
+            transition:
                 fill 0.2s ease-in-out,
                 transform 0.2s ease-in-out,
-                width 0.2s ease-in-out,;
+                width 0.2s ease-in-out, ;
 
             transform: translateY(0);
         }
@@ -120,6 +110,4 @@ body {
     }
 }
 
-.aboutcontainer {
-
-}
+.aboutcontainer {}
