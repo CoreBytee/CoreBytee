@@ -94,12 +94,16 @@ body {
 .titlecontainer .media a:hover {
   color: var(--color-text-special);
 }
-.aboutcontainer .block {
+.skillscontainer .block {
   margin-bottom: 10px;
 }
-.aboutcontainer p {
+.skillscontainer p {
   margin: 0;
 }
 .projectcontainer .block {
   margin-bottom: 10px;
+}
+.projectcontainer .projectslist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }

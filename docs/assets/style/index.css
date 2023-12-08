@@ -132,4 +132,25 @@ h6 {
   background-color: rgba(0, 0, 0, 0);
   opacity: 0;
   transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.block-project .block-data .data-body .tag,
+.block-project .block-data .data-body .link {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: var(--color-text-special);
+  color: var(--color-background);
+  font-size: 12px;
+  margin-right: 5px;
+}
+.block-project .block-data .data-body .link {
+  text-decoration: none;
+}
+.block-project .block-data .data-body .link::before {
+  content: "🔗";
+  margin-right: 5px;
 }
