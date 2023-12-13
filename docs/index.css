@@ -100,10 +100,29 @@ body {
 .skillscontainer p {
   margin: 0;
 }
-.projectcontainer .block {
-  margin-bottom: 10px;
-}
-.projectcontainer .projectslist {
+.projectscontainer .projectslist {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+@media screen and (max-width: 800px) {
+  .projectscontainer .projectslist {
+    grid-template-columns: 1fr;
+  }
+}
+.statscontainer h1 {
+  margin-bottom: 20px;
+}
+.statscontainer .stats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

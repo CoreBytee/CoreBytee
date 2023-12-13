@@ -110,15 +110,19 @@ h6 {
 }
 .block-project .block-data {
   position: relative;
+  transition: height 0.2s ease-in-out;
 }
 .block-project .block-data:hover img {
-  filter: blur(10px);
+  filter: blur(10px) brightness(50%);
 }
 .block-project .block-data:hover .data-body {
-  background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100%;
 }
 .block-project .block-data img {
+  border-radius: 20px;
   width: 100%;
   transition: filter 0.2s ease-in-out;
 }
@@ -126,8 +130,8 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   padding: 20px;
-  height: 100%;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0);
   opacity: 0;
@@ -137,6 +141,14 @@ h6 {
   justify-content: center;
   gap: 20px;
 }
+.block-project .block-data .data-body .tagrow,
+.block-project .block-data .data-body .linkrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 .block-project .block-data .data-body .tag,
 .block-project .block-data .data-body .link {
   display: inline-block;
@@ -145,7 +157,6 @@ h6 {
   background-color: var(--color-text-special);
   color: var(--color-background);
   font-size: 12px;
-  margin-right: 5px;
 }
 .block-project .block-data .data-body .link {
   text-decoration: none;
