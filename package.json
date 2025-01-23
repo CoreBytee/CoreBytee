@@ -1,0 +1,11 @@
+{
+    "name": "corebyte",
+    "scripts": {
+        "build": "echo Not implemented",
+        "build:watch": "bun build ./src/index.html --experimental-css --experimental-css-chunking --experimental-html --watch --outdir ./.build/"
+    },
+    "dependencies": {
+        "@types/p5": "^1.7.6",
+        "p5": "^1.11.2"
+    }
+}
