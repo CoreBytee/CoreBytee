@@ -2,7 +2,7 @@
     "name": "corebyte",
     "scripts": {
         "build": "echo Not implemented",
-        "build:watch": "bun build ./src/index.html --watch --outdir ./.build/"
+        "build:watch": "bun build ./src/index.html --watch --outdir ./.build/ --sourcemap=inline"
     },
     "dependencies": {
         "@types/p5": "^1.7.6",
