@@ -47,7 +47,6 @@ header {
     align-items: center;
     flex-direction: column;
 
-
     h1, h6 {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         color: var(--special-text-color);
