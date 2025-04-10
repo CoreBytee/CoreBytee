@@ -80,19 +80,19 @@ main {
     }
 }
 
-.ShadowHeader {
+.shadowheader {
     min-height: 100vh;
     height: 100vh;
 }
 
-.VerticalCenter {
+.verticalcenter {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.Block {
+.block {
     border-radius: 10px;
     border: 1px solid var(--special-text-color);
 
