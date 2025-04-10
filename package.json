@@ -1,8 +1,8 @@
 {
     "name": "corebyte",
     "scripts": {
-        "build": "echo Not implemented",
-        "build:watch": "bun build ./src/index.html --watch --outdir ./.build/ --sourcemap=inline"
+        "build": "bun build ./src/index.html --outdir ./.build/ ",
+        "dev": "bun run ./src/index.html"
     },
     "dependencies": {
         "@types/p5": "^1.7.6",
