@@ -84,6 +84,17 @@ main {
         padding: 5px;
     }
 
+    .aboutme {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 20vmin;
+        }
+    }
+
     .links {
         display: flex;
         flex-direction: row;
@@ -129,10 +140,9 @@ footer {
 
 .block {
     border-radius: 10px;
-    border: 1px solid var(--text-special-color);
+    border: 0.1px solid var(--text-special-color);
 
     backdrop-filter: blur(20px);
-    box-shadow: 0px 0px 50px var(--text-special-color);
 
     padding: 2vmin;
 
