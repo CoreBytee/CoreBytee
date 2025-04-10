@@ -1,6 +1,7 @@
 :root {
     --background-color: #0e0e0e;
-    --special-text-color: #3d81b9;
+    --text-special-color: #3d81b9;
+    --text-dim-color: #464646;
 
     --max-content-width: 1400px;
 }
@@ -65,8 +66,8 @@ header {
 
     h1, h6 {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        color: var(--special-text-color);
-        text-shadow: 0px 0px 200px var(--special-text-color);
+        color: var(--text-special-color);
+        text-shadow: 0px 0px 200px var(--text-special-color);
     }
 
     h1 {
@@ -77,6 +78,17 @@ header {
 main {
     h1 {
         padding: 20px;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+    p {
+        color: var(--text-dim-color);
     }
 }
 
@@ -94,10 +106,10 @@ main {
 
 .block {
     border-radius: 10px;
-    border: 1px solid var(--special-text-color);
+    border: 1px solid var(--text-special-color);
 
     backdrop-filter: blur(20px);
-    box-shadow: 0px 0px 50px var(--special-text-color);
+    box-shadow: 0px 0px 50px var(--text-special-color);
 
     padding: 2vmin;
 
