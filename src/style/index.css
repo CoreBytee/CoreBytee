@@ -76,8 +76,31 @@ header {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
     h1 {
-        padding: 20px;
+        padding: 5px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        img {
+            height: 50px;
+            filter: invert(100%);
+
+            transition: filter 0.2s ease-in-out;
+
+            &:hover {
+                filter: invert(80%);
+            }
+        }
     }
 }
 
