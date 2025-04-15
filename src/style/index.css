@@ -95,6 +95,20 @@ main {
         }
     }
 
+    .skills {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+        }
+
+        &>div {
+            width: 100%;
+        }
+    }
+
     .links {
         display: flex;
         flex-direction: row;
