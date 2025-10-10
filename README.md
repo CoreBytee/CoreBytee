@@ -1,14 +1,20 @@
-<img src="./logo.png" align="left" width="200"/>
+<!-- <img src="./logo.png" align="left" width="200"/> -->
 
 ### `CoreByte`
 
-Hi, I'm CoreByte, a developer passionate about building tools and software. I work with HTML, CSS, JavaScript, and SQL, creating projects like CoreLauncher, small websites or Discord Bots.
+<p align="center" style="text-align: center;">
+	Hi, I'm CoreByte, a developer passionate about building tools and software. I work with HTML, CSS, JavaScript, and SQL, creating projects like CoreLauncher, small websites or Discord Bots.
+</p>
+
 \
 \
-<a href="https://corebyte.me">Portfolio</a> •
-<a href="https://github.com/Cubic-inc">Cubic Inc</a> •
-<a href="https://github.com/CoreLauncher">CoreLauncher</a> •
-<a href="https://github.com/Archelon-Panel">Archelon</a>
+
+<p align="center" style="text-align: center;">
+	<a href="https://corebyte.me">Portfolio</a> •
+	<a href="https://github.com/Cubic-inc">Cubic Inc</a> •
+	<a href="https://github.com/CoreLauncher">CoreLauncher</a> •
+	<a href="https://github.com/Archelon-Panel">Archelon</a>
+</p>
 
 <br/>
 <br/>
