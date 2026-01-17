@@ -5,7 +5,7 @@
 Hi, I'm CoreByte, a developer passionate about building tools and software. I work with HTML, CSS, JavaScript, and SQL, creating projects like CoreLauncher, small websites or Discord Bots.
 \
 \
-<a href="https://corebyte.me">Portfolio</a> •
+<a href="https://www.corebyte.me">Portfolio</a> •
 <a href="https://github.com/Cubic-inc">Cubic Inc</a> •
 <a href="https://github.com/CoreLauncher">CoreLauncher</a> •
 <a href="https://github.com/Archelon-Panel">Archelon</a>
