@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import App from "./app/app";
 import { fetchGoatcounter } from "./macros/goatcounter" with { type: "macro" };
 
-if (import.meta.hot && !import.meta.hot.data.goatcounter) {
+async function injectGoatcounter() {
 	const element = document.createElement("script");
 	element.setAttribute(
 		"data-goatcounter",
@@ -11,7 +11,13 @@ if (import.meta.hot && !import.meta.hot.data.goatcounter) {
 	);
 	element.innerHTML = await fetchGoatcounter();
 	document.head.appendChild(element);
+}
+
+if (import.meta.hot && !import.meta.hot.data.goatcounter) {
+	injectGoatcounter();
 	import.meta.hot.data.goatcounter = true;
+} else {
+	injectGoatcounter();
 }
 
 const element = document.getElementById("root")!;
